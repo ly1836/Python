@@ -15,6 +15,7 @@
           <option value="test.*" />
           <option value="urllib2" />
           <option value="re.__Match.match" />
+          <option value="httplib" />
         </list>
       </option>
     </inspection_tool>

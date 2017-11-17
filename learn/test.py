@@ -1,35 +1,35 @@
-import  requests
-from bs4 import BeautifulSoup
+#!/usr/bin/python
+#coding=utf-8
+"""
+magnet:?xt=urn:btih:B298DD7E3BF7B300FF1F235B90FD5441002FE440
+magnet:?xt=urn:btih:506F4F0BE4D982E2E45711B7FA9BD4B03D3908CF
+magnet:?xt=urn:btih:2F2D9E0C41B0CDB7B5B565532C3DB4F8EDB61E01
+"""
 
-def figure():
-    url = "http://nanrenvip.net/e/action/get_more_nvyou.php"
-    data = {"next": 10000, "table": "nvyou", "action": "getmorenvyou", "limit": 10, "small_length": 10,
-            "orderby": "onclick"}
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
+import sys, os, urllib
+def magnet_to_bt(magnet_address):
+    beg = magnet_address.rfind(':')
+    str = magnet_address[beg+1:]
+    b_word = str[0:2]
+    e_word = str[-2:]
+    bt_address = 'http://bt.box.n0808.com/' + b_word + '/' + e_word + '/' + str + '.torrent'
+    return bt_address
 
-    respone = requests.post("http://nanrenvip.net/e/action/get_more_nvyou.php", data=data)
-
-    if respone.text.__len__() > 1:
-        print(respone.text.__len__())
-        soup = BeautifulSoup(respone.text, 'lxml')
-        ips = soup.find_all('li')
-
-        for i in range(1, len(ips)):
-            ip_info = ips[i]
-            tds = ip_info.find_all('a')
-            print("别名:%s" % tds[0].attrs['href'])
-            print("名字:%s" % tds[0].text)
-            print("图片:%s" % tds[0].next_element.attrs['src'])
+if __name__ == '__main__':
+    if len(sys.argv) > 2:
+        print("Usage:\n\t%s <magnet address>\nor\n\t%s [read from stdin]" % (sys.argv[0], sys.argv[0]))
+        sys.exit()
+    if len(sys.argv) == 2:
+        magnet = sys.argv[1]
+        if -1 == magnet.find(':'):
+            sys.exit('invalid magnet address')
+        bt_url = magnet_to_bt(magnet)
+        os.system("wget " + bt_url)
     else:
-        print("null")
-        pass
-
-
-
-
-if __name__ == "__main__":
-    figure()
-
-
-
+        for line in sys.stdin:
+            if -1 == line.find(':'):
+                continue
+            url = magnet_to_bt(line[0:-1])
+            pos = url.rfind('/')
+            file_name = url[pos+1:]
+            urllib.urlretrieve(url, file_name)

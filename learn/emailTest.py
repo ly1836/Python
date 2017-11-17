@@ -1,40 +1,38 @@
+#!/usr/bin/python
 import smtplib
 from email.mime.text import MIMEText
-from email.header import Header
 
-# 第三方 SMTP 服务
-mail_host = 'smtp.163.com'  # 设置服务器
-mail_user = "ly_1836@163.com"  # 用户名
-mail_pass = "leiyang123"  # 口令
+mailto_list = "491816301@qq.com"
 
-sender = "ly_1836@163.com"
-
-receivers = ['491816301@qq.com']  # 接收邮件
-
-# 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
-message = MIMEText("wdqvqvev蚊v我evevee额 额发方便他人那不如一年一头牛下标", "plain", "utf-8")
-
-message['From'] = Header("ly3", "utf-8")
-
-message['To'] = Header("测试2", "utf-8")
-
-subject = "邮件测试1"
-
-message['Subject'] = Header(subject, 'utf-8')
+mail_host = "smtp.163.com"
+mail_user = "ly_1836"
+mail_pass = "leiyang123"
+mail_postfix = "163.com"
 
 
-def send():
+def send_mail(to_list, sub, content):
+    me = "Ryan Mok" + "<" + mail_user + "@" + mail_postfix + ">"
+    msg = MIMEText(content, _subtype='plain', _charset='gb2312')
+    msg['Subject'] = sub
+    msg['From'] = me
+    # msg['To'] = ';'.join(to_list)
+    msg['To'] = to_list
     try:
-        smtpObj = smtplib.SMTP()
-        smtpObj.connect(mail_host, 25)
-        smtpObj.login(mail_user, mail_pass)
-        smtpObj.sendmail(sender, receivers, message.as_string())
-        print("邮件发送成功")
-    except smtplib.SMTPException as e:
-        print(e)
-        print("发送邮件失败")
+        server = smtplib.SMTP()
+        server.connect(mail_host)
+        server.login(mail_user, mail_pass)
+        server.sendmail(me, to_list, msg.as_string())
+        server.close()
+        return True
+    except Exception as e:
+        print (e)
+        return False
 
-        send()
 
-if __name__ == "__main__":
-    send()
+if __name__ == '__main__':
+    rate = 3323 / 18658
+    rate_num = float(rate * 100)
+    if send_mail(mailto_list, "爬虫错误日志", "%s\n进度:%.5f%%\n进行重连..." % ("error",rate_num)):
+        print("Send succeed!\n")
+    else:
+        print("Send failed!\n")
