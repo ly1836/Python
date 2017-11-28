@@ -13,14 +13,15 @@
     <SUITE FILE_PATH="coverage/learn$DBO__1_.coverage" NAME="DBO (1) Coverage Results" MODIFIED="1510538932946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
     <SUITE FILE_PATH="coverage/learn$threadLockTest.coverage" NAME="threadLockTest Coverage Results" MODIFIED="1508466997602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$operator.coverage" NAME="operator Coverage Results" MODIFIED="1507549386162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learn$DBO.coverage" NAME="DBO Coverage Results" MODIFIED="1509594394449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/learn$DBO.coverage" NAME="DBO Coverage Results" MODIFIED="1511591679601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
     <SUITE FILE_PATH="coverage/learn$osTest.coverage" NAME="osTest Coverage Results" MODIFIED="1507687501597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learn$downLoadImg.coverage" NAME="downLoadImg Coverage Results" MODIFIED="1510566484184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
+    <SUITE FILE_PATH="coverage/learn$downLoadImg.coverage" NAME="downLoadImg Coverage Results" MODIFIED="1511596510951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
     <SUITE FILE_PATH="coverage/learn$serverScoket.coverage" NAME="serverScoket Coverage Results" MODIFIED="1508414530834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$jsonTest.coverage" NAME="jsonTest Coverage Results" MODIFIED="1508469707689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$firstPro.coverage" NAME="firstPro Coverage Results" MODIFIED="1506665090108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$dataStructureTest.coverage" NAME="dataStructureTest Coverage Results" MODIFIED="1507624631113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$test.coverage" NAME="test Coverage Results" MODIFIED="1510727221047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learn$removeWatermark.coverage" NAME="removeWatermark Coverage Results" MODIFIED="1511575224942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
     <SUITE FILE_PATH="coverage/learn$timeTest.coverage" NAME="timeTest Coverage Results" MODIFIED="1508469814288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$proxy.coverage" NAME="proxy Coverage Results" MODIFIED="1509416429226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cn.com.reptile" />
     <SUITE FILE_PATH="coverage/learn$ReptileBlog.coverage" NAME="ReptileBlog Coverage Results" MODIFIED="1509153048731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -38,6 +39,7 @@
     <SUITE FILE_PATH="coverage/learn$dbTest.coverage" NAME="dbTest Coverage Results" MODIFIED="1507692742382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learn$webService.coverage" NAME="webService Coverage Results" MODIFIED="1509594636392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
     <SUITE FILE_PATH="coverage/learn$Unit.coverage" NAME="Unit Coverage Results" MODIFIED="1509413275361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learn$downloadVideo__1_.coverage" NAME="downloadVideo (1) Coverage Results" MODIFIED="1511800438191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
     <SUITE FILE_PATH="coverage/learn$nanRen.coverage" NAME="nanRen Coverage Results" MODIFIED="1510879648164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reptile" />
     <SUITE FILE_PATH="coverage/learn$downloadVideo.coverage" NAME="downloadVideo Coverage Results" MODIFIED="1511319797800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -67,19 +69,72 @@
       <file leaf-file-name="downLoadImg.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reptile/downLoadImg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="120">
+              <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nanRen.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="downloadVideo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reptile/downloadVideo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reptile/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="125" lean-forward="false" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBO.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reptile/DBO.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="216" column="8" lean-forward="false" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding>
+                <marker date="1511602233408" expanded="true" signature="454:492" ph="insert into proxy... " />
+                <marker date="1511602233408" expanded="true" signature="454:503" ph="insert into proxy... " />
+                <marker date="1511602233408" expanded="true" signature="454:507" ph="insert into proxy... " />
+                <marker date="1511602233408" expanded="true" signature="454:524" ph="insert into proxy... " />
+                <marker date="1511602233408" expanded="true" signature="454:542" ph="insert into proxy... " />
+                <marker date="1511602233408" expanded="true" signature="454:543" ph="insert into proxy... " />
+                <marker date="1511602233408" expanded="true" signature="878:903" ph="select * fro... proxy" />
+                <marker date="1511602233408" expanded="true" signature="878:904" ph="select * fro... proxy" />
+                <marker date="1511602233408" expanded="true" signature="878:913" ph="select * fro... proxy" />
+                <marker date="1511602233408" expanded="true" signature="878:914" ph="select * fro... proxy" />
+                <marker date="1511602233408" expanded="true" signature="1580:1676" ph="insert into figure... " />
+                <marker date="1511602233408" expanded="true" signature="2715:2823" ph="insert into source... " />
+                <marker date="1511602233408" expanded="true" signature="3000:3059" ph="insert into figure_source... " />
+                <marker date="1511602233408" expanded="true" signature="3775:3883" ph="insert into magnet... " />
+                <marker date="1511602233408" expanded="true" signature="3775:3901" ph="insert into magnet... " />
+                <marker date="1511602233408" expanded="true" signature="3775:3905" ph="insert into magnet... " />
+                <marker date="1511602233408" expanded="true" signature="4083:4142" ph="insert into source_magnet... " />
+                <marker date="1511602233408" expanded="true" signature="5146:5309" ph="insert into video... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nanRen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reptile/nanRen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1140">
+              <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,9 +163,13 @@
       <find>getAjaxData</find>
       <find>getAllSource</find>
       <find>getMagnetInfoByUrl</find>
-      <find>text</find>
       <find>view_bar</find>
       <find>mailto_list</find>
+      <find>text</find>
+      <find>&lt;video</find>
+      <find>source</find>
+      <find>date</find>
+      <find>download</find>
     </findStrings>
     <replaceStrings>
       <replace>%d条</replace>
@@ -150,12 +209,15 @@
         <option value="$PROJECT_DIR$/config/webService.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0fb69ef3-4e6c-4691-bce2-a8dfdb498434/console.sql" />
         <option value="$PROJECT_DIR$/reptile/dowLoadImg.py" />
-        <option value="$PROJECT_DIR$/reptile/downLoadImg.py" />
-        <option value="$PROJECT_DIR$/reptile/DBO.py" />
         <option value="$PROJECT_DIR$/emailTest.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/reptile/nanRen.py" />
         <option value="$PROJECT_DIR$/downloadVideo.py" />
+        <option value="$PROJECT_DIR$/reptile/removeWatermark.py" />
+        <option value="$PROJECT_DIR$/reptile/downLoadImg.py" />
+        <option value="$PROJECT_DIR$/reptile/test.py" />
+        <option value="$PROJECT_DIR$/reptile/DBO.py" />
+        <option value="$PROJECT_DIR$/reptile/downloadVideo.py" />
       </list>
     </option>
   </component>
@@ -284,8 +346,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,6 +366,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,6 +380,9 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)&#10;MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\PycharmProjectsWork\learn\reptile" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\PycharmProjectsWork\learn\config" />
     </key>
@@ -334,7 +399,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.downloadVideo">
+  <component name="RunManager" selected="Python.downloadVideo (1)">
+    <configuration name="DBO" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reptile" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reptile/DBO.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <node-interpreter value="project" />
       <envs />
@@ -357,6 +440,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="downloadVideo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reptile" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reptile/downloadVideo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="downloadVideo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,43 +471,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="learn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/downloadVideo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="emailTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/emailTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="nanRen" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reptile" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reptile/nanRen.py" />
+      <option name="SCRIPT_NAME" value="G:\PycharmProjectsWork\learn\reptile\downloadVideo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -429,39 +494,39 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="removeWatermark" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reptile" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="learn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reptile/removeWatermark.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.randomNumbers" />
-      <item index="1" class="java.lang.String" itemvalue="Python.nanRen" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.downLoadImg" />
-      <item index="4" class="java.lang.String" itemvalue="Python.emailTest" />
-      <item index="5" class="java.lang.String" itemvalue="Python.downloadVideo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.downLoadImg" />
+      <item index="2" class="java.lang.String" itemvalue="Python.downloadVideo" />
+      <item index="3" class="java.lang.String" itemvalue="Python.removeWatermark" />
+      <item index="4" class="java.lang.String" itemvalue="Python.downloadVideo (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.DBO" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.downloadVideo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.nanRen" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.emailTest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.downLoadImg" />
+        <item index="0" class="java.lang.String" itemvalue="Python.downloadVideo (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.downLoadImg" />
+        <item index="2" class="java.lang.String" itemvalue="Python.DBO" />
+        <item index="3" class="java.lang.String" itemvalue="Python.removeWatermark" />
+        <item index="4" class="java.lang.String" itemvalue="Python.downloadVideo" />
       </list>
     </recent_temporary>
   </component>
@@ -484,13 +549,13 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22043702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22557841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3499327" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3499327" sideWeight="0.5051414" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15424165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3499327" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3499327" sideWeight="0.49485862" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -520,6 +585,11 @@
           <line>18</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reptile/downloadVideo.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -528,7 +598,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="144" />
+      <option name="time" value="158" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -537,27 +607,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/clsTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/PythonAnaconda/Lib/glob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/operatorTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://G:/PythonAnaconda/Lib/site-packages/pymysql/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -721,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/PythonAnaconda/Lib/site-packages/requests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="42" column="14" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://G:/PythonAnaconda/Lib/site-packages/bs4/element.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -815,33 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reptile/DBO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3344">
-          <caret line="177" column="54" lean-forward="false" selection-start-line="177" selection-start-column="54" selection-end-line="177" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-            <marker date="1510576565870" expanded="true" signature="455:493" ph="insert into proxy... " />
-            <marker date="1510576565870" expanded="true" signature="455:504" ph="insert into proxy... " />
-            <marker date="1510576565870" expanded="true" signature="455:508" ph="insert into proxy... " />
-            <marker date="1510576565870" expanded="true" signature="455:525" ph="insert into proxy... " />
-            <marker date="1510576565870" expanded="true" signature="455:543" ph="insert into proxy... " />
-            <marker date="1510576565870" expanded="true" signature="455:544" ph="insert into proxy... " />
-            <marker date="1510576565870" expanded="true" signature="879:904" ph="select * fro... proxy" />
-            <marker date="1510576565870" expanded="true" signature="879:905" ph="select * fro... proxy" />
-            <marker date="1510576565870" expanded="true" signature="879:914" ph="select * fro... proxy" />
-            <marker date="1510576565870" expanded="true" signature="879:915" ph="select * fro... proxy" />
-            <marker date="1510576565870" expanded="true" signature="1579:1675" ph="insert into figure... " />
-            <marker date="1510576565870" expanded="true" signature="2715:2822" ph="insert into source... " />
-            <marker date="1510576565870" expanded="true" signature="2998:3057" ph="insert into figure_source... " />
-            <marker date="1510576565870" expanded="true" signature="3768:3876" ph="insert into magnet... " />
-            <marker date="1510576565870" expanded="true" signature="3768:3893" ph="insert into magnet... " />
-            <marker date="1510576565870" expanded="true" signature="3768:3898" ph="insert into magnet... " />
-            <marker date="1510576565870" expanded="true" signature="4076:4135" ph="insert into source_magnet... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -871,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-786">
           <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,15 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/downloadVideo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,27 +900,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reptile/downloadVideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
-            <element signature="e#10#24#0" expanded="true" />
-            <marker date="1507692742129" expanded="true" signature="426:444" ph="select * fro... user" />
-            <marker date="1507692742129" expanded="true" signature="690:741" ph="insert into user... " />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reptile/downLoadImg.py">
+    <entry file="file://$PROJECT_DIR$/reptile/removeWatermark.py" />
+    <entry file="file://G:/PythonAnaconda/Lib/site-packages/requests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reptile/nanRen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="1140">
+          <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reptile/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="125" lean-forward="false" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reptile/downLoadImg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reptile/DBO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="216" column="8" lean-forward="false" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <marker date="1511602233408" expanded="true" signature="454:492" ph="insert into proxy... " />
+            <marker date="1511602233408" expanded="true" signature="454:503" ph="insert into proxy... " />
+            <marker date="1511602233408" expanded="true" signature="454:507" ph="insert into proxy... " />
+            <marker date="1511602233408" expanded="true" signature="454:524" ph="insert into proxy... " />
+            <marker date="1511602233408" expanded="true" signature="454:542" ph="insert into proxy... " />
+            <marker date="1511602233408" expanded="true" signature="454:543" ph="insert into proxy... " />
+            <marker date="1511602233408" expanded="true" signature="878:903" ph="select * fro... proxy" />
+            <marker date="1511602233408" expanded="true" signature="878:904" ph="select * fro... proxy" />
+            <marker date="1511602233408" expanded="true" signature="878:913" ph="select * fro... proxy" />
+            <marker date="1511602233408" expanded="true" signature="878:914" ph="select * fro... proxy" />
+            <marker date="1511602233408" expanded="true" signature="1580:1676" ph="insert into figure... " />
+            <marker date="1511602233408" expanded="true" signature="2715:2823" ph="insert into source... " />
+            <marker date="1511602233408" expanded="true" signature="3000:3059" ph="insert into figure_source... " />
+            <marker date="1511602233408" expanded="true" signature="3775:3883" ph="insert into magnet... " />
+            <marker date="1511602233408" expanded="true" signature="3775:3901" ph="insert into magnet... " />
+            <marker date="1511602233408" expanded="true" signature="3775:3905" ph="insert into magnet... " />
+            <marker date="1511602233408" expanded="true" signature="4083:4142" ph="insert into source_magnet... " />
+            <marker date="1511602233408" expanded="true" signature="5146:5309" ph="insert into video... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reptile/downloadVideo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

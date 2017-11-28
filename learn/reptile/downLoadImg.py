@@ -33,7 +33,7 @@ def sourceImg():
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
 
     # 所有fanhao
-    sourceData = dbo.getAllSource()
+    sourceData = dbo.getAllSource(11093)
 
     for source in sourceData:
         url = str(source[2])
