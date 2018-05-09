@@ -68,7 +68,6 @@ class dbo:
             self.__db.close()
 
     def okex(self, url, exchangePair):
-        global count
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
         try:
@@ -98,8 +97,10 @@ class dbo:
                             db.insertExchangePair(nowDate, nowDate, 1, 6, d[i]['symbol'], baseCurrency,
                                                   quoteCurrency, baseCurrencyId, "OKEX", "https://www.okex.com")
 
+                        print("数据库中未找到[%s]交易对,已入库" % d[i]['symbol'])
+
         except Exception as e:
-            print("拉取okex交易对失败" % count)
+            print("拉取okex交易对失败")
             print(e)
 
 
