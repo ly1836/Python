@@ -97,7 +97,7 @@ class dbo:
                     baseCurrency = (symbol + "")[0:((symbol + "").index("_"))]
                     quoteCurrency = (symbol + "")[
                                     (symbol + "").index("_") + 1:len(symbol + "")]
-                    # 忽略QC计价币种
+                    # 忽略bts计价币种
                     if (quoteCurrency == "bts" or baseCurrency == "bts"):
                         continue
 
