@@ -31,7 +31,7 @@ class dbo:
             print("数据库操作出错,事物已回滚")
             self.__db.close()
 
-    # 插入ZB交易对
+    # 插入Bitstamp交易对
     def insertExchangePair(self, createDate, lastUpdateDate, version, exchangeId, originalPair, baseCurrency,
                            quoteCurrency,
                            baseCurrencyId, exchangeName, exchangeUrl):
@@ -56,7 +56,7 @@ class dbo:
             print("数据库操作出错,事物已回滚")
             self.__db.close()
 
-    # 查询ZB所有交易对信息
+    # 查询Bitstamp所有交易对信息
     def getExchangePair(self):
         sql = "select *from b_exchange_pair"
 
@@ -72,7 +72,9 @@ class dbo:
             print("数据库操作出错,事物已回滚")
             self.__db.close()
 
-    def zb(self, url, exchangePair,exchangeId):
+    def zb(self, url, exchangePair, exchangeName, exchangeId, exchangeUrl):
+        counts = 0
+
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36',
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -84,44 +86,42 @@ class dbo:
             if respone.text.__len__() > 1:
                 d = json.loads(respone.text)
                 for key in d:
-                #for i in range(0, len(d)):
+                    # for i in range(0, len(d)):
                     # 基础币种
-                    #baseCurrency = d[i]['base-currency']
+                    # baseCurrency = d[i]['base-currency']
                     # 计价币种
-                    #quoteCurrency = d[i]['quote-currency']
+                    # quoteCurrency = d[i]['quote-currency']
                     # 完整交易对
-                    symbol = key
+                    symbol = key['name']
 
-                    baseCurrency = (symbol + "")[0:((symbol + "").index("_"))]
+                    baseCurrency = (symbol + "")[0:((symbol + "").index("/"))].lower()
                     quoteCurrency = (symbol + "")[
-                                (symbol + "").index("_") + 1:len(symbol + "")]
-
-                    #忽略QC计价币种
-                    if(quoteCurrency == "qc" or baseCurrency == "qc"):
-                        continue
+                                    (symbol + "").index("/") + 1:len(symbol + "")].lower()
 
                     flag = 1
                     for j in range(0, len(exchangePair)):
                         if (exchangePair[j][5] == symbol and exchangePair[j][4] == exchangeId):
                             flag = 0
                     if (flag == 1):
+                        counts = counts + 1
+
                         nowDate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
                         data = db.getEncryptedCurrency(baseCurrency)
 
                         if (data.__len__() == 0):
-                            db.insertExchangePair(nowDate, nowDate, 1, exchangeId, symbol, baseCurrency,
-                                                  quoteCurrency, -1, "ZB", "https://www.zb.com/")
+                            db.insertExchangePair(nowDate, nowDate, 1, exchangeId, (baseCurrency+quoteCurrency), baseCurrency,
+                                                  quoteCurrency, -1, exchangeName, exchangeUrl)
                         else:
                             baseCurrencyId = data[0][0]
 
-                            db.insertExchangePair(nowDate, nowDate, 1, exchangeId, symbol, baseCurrency,
-                                                  quoteCurrency, baseCurrencyId, "ZB", "https://www.zb.com/")
+                            db.insertExchangePair(nowDate, nowDate, 1, exchangeId, (baseCurrency+quoteCurrency), baseCurrency,
+                                                  quoteCurrency, baseCurrencyId, exchangeName, exchangeUrl)
 
-                        print("数据库中未找到[%s]交易对,已入库" % symbol)
-
+                        print("数据库中未找到[%s]交易对,已入库" % (baseCurrency+quoteCurrency))
+                print("已入库[%d]个交易对" % counts)
         except Exception as e:
-            print("拉取ZB交易对失败")
+            print("拉取Bitstamp交易对失败")
             print(e)
 
 
@@ -129,5 +129,5 @@ if __name__ == "__main__":
     db = dbo()
 
     exchangePair = db.getExchangePair()
-    db.zb("http://api.zb.com/data/v1/markets", exchangePair,13)
-    print("ZB交易对同步完毕")
+    db.zb("https://www.bitstamp.net/api/v2/trading-pairs-info/", exchangePair, "Bitstamp", 11, "https://www.bitstamp.net")
+    print("Bitstamp交易对同步完毕")
