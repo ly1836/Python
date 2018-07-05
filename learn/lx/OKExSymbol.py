@@ -11,6 +11,7 @@ class dbo:
         # 打开一个数据库连接
         self.__db = pymysql.connect("localhost", "root", "admin123", "lianxiang", charset='utf8')
 
+
         # 使用 cursor() 方法创建一个游标对象 cursor
         self.__cursor = self.__db.cursor()
 
