@@ -73,7 +73,7 @@ class dbo:
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
         try:
 
-            respone = requests.get(url, headers=headers)
+            respone = requests.get(url, headers=headers,verify=False)
 
             if respone.text.__len__() > 1:
                 d = json.loads(respone.text)['data']

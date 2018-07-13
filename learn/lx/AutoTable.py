@@ -6,7 +6,7 @@ def autoKlinTable():
     file = open("d:\\autoKlinTable.sql" ,"w")
 
     #交易所ID
-    exchangeId = {13 ,28 ,3 ,4 ,5 ,6}
+    exchangeId = {21}
 
     #月份
     date = {6 ,7 ,8 ,9 ,10 ,11 ,12}
@@ -223,12 +223,12 @@ def truncateTableData():
 if __name__ == "__main__":
     count = autoKlinTable()
     print("共生成[%d]张表--->K线表" % count)
+    # #
+    # count = dropKlinTable()
+    # print("共生成[%d]张表--->删除K线表" % count)
     #
-    count = dropKlinTable()
-    print("共生成[%d]张表--->删除K线表" % count)
-
-    count = truncateTableData()
-    print("共生成[%d]张表--->清除K线表数据" % count)
+    # count = truncateTableData()
+    # print("共生成[%d]张表--->清除K线表数据" % count)
     #
     # count = dropMarketHistoryTableByexchangeId()
     # print("共生成[%d]张表--->删除行情历史exchangeId_字段" % count)

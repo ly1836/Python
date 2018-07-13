@@ -20,7 +20,7 @@ class dbo:
 
     # 根据基础币种Name查询baseCurrencyId
     def getEncryptedCurrency(self):
-        sql = "SELECT * from b_encrypted_currency"
+        sql = "SELECT * from b_encrypted_currency where id = 1226"
         try:
             self.__cursor.execute(sql)
 
@@ -42,7 +42,7 @@ class dbo:
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
         i = 0
         try:
-            for j in range(1, len(encryptedCurrency)):
+            for j in range(0, len(encryptedCurrency)):
                 url = "https://www.feixiaohao.com/search?word="
                 respone = None
                 soup = None
