@@ -11,6 +11,7 @@ class dbo:
         # 打开一个数据库连接
         self.__db = pymysql.connect("localhost", "root", "admin123", "lianxiang", charset='utf8')
 
+
         # 使用 cursor() 方法创建一个游标对象 cursor
         self.__cursor = self.__db.cursor()
 
@@ -31,32 +32,27 @@ class dbo:
             print("数据库操作出错,事物已回滚")
             self.__db.close()
 
-    # 插入exx交易对
+    # 插入Kucoin交易对
     def insertExchangePair(self, createDate, lastUpdateDate, version, exchangeId, originalPair, baseCurrency,
                            quoteCurrency,
-                           baseCurrencyId, exchangeName, exchangeUrl):
+                           baseCurrencyId, exchangeName, exchangeUrl, open):
         sql = ""
         if (baseCurrencyId == -1):
-            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,exchangeName_,exchangeUrl_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%s,%s)" % (
-                version, exchangeId, "\"" + originalPair + "\"", "\"" + baseCurrency + "\"",
-                "\"" + quoteCurrency + "\"",
-                "\"" + exchangeName + "\"", "\"" + exchangeUrl + "\"")
+            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,exchangeName_,exchangeUrl_,open_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%s,%s,%d)" %(version,exchangeId,"\""+originalPair+"\"","\""+baseCurrency+"\"","\""+quoteCurrency+"\"","\""+exchangeName+"\"","\""+exchangeUrl+"\"",open)
         else:
-            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,baseCurrencyId_,exchangeName_,exchangeUrl_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%d,%s,%s)" % (
-                version, exchangeId, "\"" + originalPair + "\"", "\"" + baseCurrency + "\"",
-                "\"" + quoteCurrency + "\"",
-                baseCurrencyId, "\"" + exchangeName + "\"", "\"" + exchangeUrl + "\"")
+            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,baseCurrencyId_,exchangeName_,exchangeUrl_,open_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%d,%s,%s,%d)" %(version,exchangeId,"\""+originalPair+"\"","\""+baseCurrency+"\"","\""+quoteCurrency+"\"",baseCurrencyId,"\""+exchangeName+"\"","\""+exchangeUrl+"\"",open)
         try:
             self.__cursor.execute(sql)
 
             # 提交到数据库执行
             self.__db.commit()
         except:
+            logging.exception("Exception Logged")
             self.__db.rollback()
             print("数据库操作出错,事物已回滚")
             self.__db.close()
 
-    # 查询exx所有交易对信息
+    # 查询Kucoin所有交易对信息
     def getExchangePair(self):
         sql = "select *from b_exchange_pair"
 
@@ -81,26 +77,24 @@ class dbo:
         }
         try:
 
-            respone = requests.get(url, headers=headers)
+            s = requests.session()
+            s.proxies = {'https': '127.0.0.1:1080'}
+            respone = s.get(url, headers=headers)
 
             if respone.text.__len__() > 1:
-                d = json.loads(respone.text)
-                for key in d:
-                    # for i in range(0, len(d)):
+                d = json.loads(respone.text)['data']
+                    #for key in d:
+                for i in range(0, len(d)):
                     # 基础币种
                     # baseCurrency = d[i]['base-currency']
                     # 计价币种
                     # quoteCurrency = d[i]['quote-currency']
                     # 完整交易对
-                    symbol = key
+                    symbol = d[i]['symbol']
 
-                    baseCurrency = (symbol + "")[0:((symbol + "").index("_"))]
+                    baseCurrency = (symbol + "")[0:((symbol + "").index("-"))]
                     quoteCurrency = (symbol + "")[
-                                    (symbol + "").index("_") + 1:len(symbol + "")]
-
-                    if(baseCurrency == "qc" or quoteCurrency == "qc"):
-                        print("已忽略[%s]" % symbol)
-                        continue
+                                    (symbol + "").index("-") + 1:len(symbol + "")]
 
                     flag = 1
                     for j in range(0, len(exchangePair)):
@@ -115,17 +109,18 @@ class dbo:
 
                         if (data.__len__() == 0):
                             db.insertExchangePair(nowDate, nowDate, 1, exchangeId, symbol, baseCurrency,
-                                                  quoteCurrency, -1, exchangeName, exchangeUrl)
+                                                  quoteCurrency, -1, exchangeName, exchangeUrl,0)
                         else:
                             baseCurrencyId = data[0][0]
 
                             db.insertExchangePair(nowDate, nowDate, 1, exchangeId, symbol, baseCurrency,
-                                                  quoteCurrency, baseCurrencyId, exchangeName, exchangeUrl)
+                                                  quoteCurrency, baseCurrencyId, exchangeName, exchangeUrl,0)
 
                         print("数据库中未找到[%s]交易对,已入库" % symbol)
-                print("已入库[%d]个交易对" % counts)
+
+            print("已入库[%d]个交易对" % counts)
         except Exception as e:
-            print("拉取Exx交易对失败")
+            print("拉取Kucoin交易对失败")
             print(e)
 
 
@@ -133,5 +128,5 @@ if __name__ == "__main__":
     db = dbo()
 
     exchangePair = db.getExchangePair()
-    db.zb("https://api.exx.com/data/v1/tickers", exchangePair, "Exx", 28, "https://www.exx.com/")
-    print("Exx交易对同步完毕")
+    db.zb("https://api.kucoin.com/v1/market/open/symbols", exchangePair, "Kucoin", 35, "https://www.kucoin.com")
+    print("Kucoin交易对同步完毕")

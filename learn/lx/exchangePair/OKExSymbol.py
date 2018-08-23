@@ -35,12 +35,12 @@ class dbo:
     # 插入okex交易对
     def insertExchangePair(self, createDate, lastUpdateDate, version, exchangeId, originalPair, baseCurrency,
                            quoteCurrency,
-                           baseCurrencyId, exchangeName, exchangeUrl):
+                           baseCurrencyId, exchangeName, exchangeUrl,open):
         sql = ""
         if (baseCurrencyId == -1):
-            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,exchangeName_,exchangeUrl_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%s,%s)" %(version,exchangeId,"\""+originalPair+"\"","\""+baseCurrency+"\"","\""+quoteCurrency+"\"","\""+exchangeName+"\"","\""+exchangeUrl+"\"")
+            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,exchangeName_,exchangeUrl_,open_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%s,%s,%d)" %(version,exchangeId,"\""+originalPair+"\"","\""+baseCurrency+"\"","\""+quoteCurrency+"\"","\""+exchangeName+"\"","\""+exchangeUrl+"\"",open)
         else:
-            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,baseCurrencyId_,exchangeName_,exchangeUrl_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%d,%s,%s)" %(version,exchangeId,"\""+originalPair+"\"","\""+baseCurrency+"\"","\""+quoteCurrency+"\"",baseCurrencyId,"\""+exchangeName+"\"","\""+exchangeUrl+"\"")
+            sql = "insert into b_exchange_pair(createDate_,lastUpdateDate_,version_,exchangeId_,originalPair_,baseCurrency_,quoteCurrency_,baseCurrencyId_,exchangeName_,exchangeUrl_,open_) value(\"" + createDate + "\",\"" + lastUpdateDate + "\",%d,%d,%s,%s,%s,%d,%s,%s,%d)" %(version,exchangeId,"\""+originalPair+"\"","\""+baseCurrency+"\"","\""+quoteCurrency+"\"",baseCurrencyId,"\""+exchangeName+"\"","\""+exchangeUrl+"\"",open)
         try:
             self.__cursor.execute(sql)
 
@@ -70,10 +70,20 @@ class dbo:
 
     def okex(self, url, exchangePair):
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'}
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+            'upgrade-insecure-requests':'1',
+            'pragma':'no-cache',
+            'accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'accept-encoding':'gzip, deflate, br',
+            'accept-language':'zh-CN,zh;q=0.9',
+            'cache-control':'no-cache',
+            'cookie':'__cfduid=d758306b7a20b60b97e9dce01b629bff71528790848; locale=zh_CN; perm=AEB726BADDCF76C2EAFEE980B2117699; lp=; _ga=GA1.2.1165342718.1528790875; Hm_lvt_b4e1f9d04a77cfd5db302bc2bcc6fe45=1530084291,1530254260,1530504420,1530819782'
+        }
+
+        proxies = {'https': '127.0.0.1:1080'}
         try:
 
-            respone = requests.get(url, headers=headers,verify=False)
+            respone = requests.get(url, headers=headers,proxies=proxies)
 
             if respone.text.__len__() > 1:
                 d = json.loads(respone.text)['data']
@@ -91,12 +101,12 @@ class dbo:
 
                         if (data.__len__() == 0):
                             db.insertExchangePair(nowDate, nowDate, 1, 6, d[i]['symbol'], baseCurrency,
-                                                  quoteCurrency, -1, "OKEX", "https://www.okex.com")
+                                                  quoteCurrency, -1, "OKEX", "https://www.okex.com",0)
                         else:
                             baseCurrencyId = data[0][0]
 
                             db.insertExchangePair(nowDate, nowDate, 1, 6, d[i]['symbol'], baseCurrency,
-                                                  quoteCurrency, baseCurrencyId, "OKEX", "https://www.okex.com")
+                                                  quoteCurrency, baseCurrencyId, "OKEX", "https://www.okex.com",0)
 
                         print("数据库中未找到[%s]交易对,已入库" % d[i]['symbol'])
 
